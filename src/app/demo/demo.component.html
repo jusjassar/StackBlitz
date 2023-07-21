@@ -1,0 +1,27 @@
+<div>
+  <h4>Example 1: Two Way Data Binding</h4>
+  <label for="Search"> Search </label>
+  <input type="text" [(ngModel)]="searchText" />
+  <p>"You Searched For" {{ searchText }}</p>
+</div>
+<div>
+  <h4>Example 2: Accessing Value with Template Reference Variable</h4>
+  <label for="">Search2</label>
+  <input type="text" #refVar1 (keyup)="(0)" />
+  <!-- We added (keyup)=0 to execute the Change Detection purposes only -->
+  <p>You Entered Text: {{ refVar1.value }}</p>
+</div>
+<div>
+  <h4>Example 3: Accessing Value with Template Reference Variable</h4>
+  <label for="search2">Search3</label>
+  <input type="text" #inputBox />
+  <button (click)="searchText = inputBox.value">Click</button>
+  <p>You Searched For {{ searchText }}</p>
+</div>
+<div>
+  <h4>Accessing the component with Template Ref Var</h4>
+  <app-demo-child #childRefVar></app-demo-child>
+  <p>Properties from Child Component</p>
+  <p>{{ childRefVar.totalStudents }}</p>
+  <p>{{ childRefVar.selectedUser }}</p>
+</div>

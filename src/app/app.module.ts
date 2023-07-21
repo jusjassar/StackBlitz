@@ -5,6 +5,9 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
+import { DemoComponent } from './demo/demo.component';
+import { FormsModule } from '@angular/forms';
+import { DemoChildComponent } from './demo-child/demo-child.component';
 
 const appRoutes:Routes=[
 {path:'students',component:StudentsComponent}
@@ -13,10 +16,13 @@ const appRoutes:Routes=[
 @NgModule({
   imports: [BrowserModule,
   RouterModule.forRoot(appRoutes),
-HttpClientModule],
+HttpClientModule,
+FormsModule],
   declarations: [
     AppComponent,
-    StudentsComponent
+    StudentsComponent,
+    DemoComponent,
+    DemoChildComponent
   ],
   bootstrap: [AppComponent],
 })

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 
 @Component({
@@ -12,5 +12,13 @@ export class DemoComponent implements OnInit {
 
   ngOnInit() {
   }
-  searchText:string='Hello'
+  searchText:string='Hello';
+  searchOutput:string='';
+  searchedEntered(searchStr:HTMLInputElement){
+    console.log(searchStr.value)
+  }
+  inputMethod(data:Event){
+    console.log((<HTMLInputElement>data.target).value)
+  }
+ 
 }

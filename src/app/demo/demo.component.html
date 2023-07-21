@@ -13,10 +13,23 @@
 </div>
 <div>
   <h4>Example 3: Accessing Value with Template Reference Variable</h4>
-  <label for="search2">Search3</label>
+  <label for="search3">Search3</label>
   <input type="text" #inputBox />
   <button (click)="searchText = inputBox.value">Click</button>
   <p>You Searched For {{ searchText }}</p>
+</div>
+<div>
+  <h4>Exmaple 4 Template Ref</h4>
+  <label for="">search4</label>
+  <input type="text" #searchBox (input)="searchedEntered(searchBox)" />
+  <label for="">Output</label>
+  <p>{{ searchOutput }}</p>
+  <!-- now go the the component file -->
+
+  <div>
+    <h4>passing the input wiht Event</h4>
+    <input type="text" (input)="inputMethod($event)" />
+  </div>
 </div>
 <div>
   <h4>Accessing the component with Template Ref Var</h4>
@@ -25,3 +38,5 @@
   <p>{{ childRefVar.totalStudents }}</p>
   <p>{{ childRefVar.selectedUser }}</p>
 </div>
+
+

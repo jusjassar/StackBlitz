@@ -5,9 +5,12 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
+import { TeachersComponent } from './teachers/teachers.component';
+import { AgeComponent } from './age/age.component';
 
 const appRoutes:Routes=[
-{path:'students',component:StudentsComponent}
+  {path:'students',component:StudentsComponent},
+  {path:'teachers',component:TeachersComponent}
 ]
 
 @NgModule({
@@ -16,7 +19,9 @@ const appRoutes:Routes=[
 HttpClientModule],
   declarations: [
     AppComponent,
-    StudentsComponent
+    StudentsComponent,
+    TeachersComponent,
+    AgeComponent
   ],
   bootstrap: [AppComponent],
 })

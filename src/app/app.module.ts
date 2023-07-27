@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
+import { ProductsComponent } from './products/products.component';
 
 const appRoutes:Routes=[
 {path:'students',component:StudentsComponent}
@@ -16,7 +17,8 @@ const appRoutes:Routes=[
 HttpClientModule],
   declarations: [
     AppComponent,
-    StudentsComponent
+    StudentsComponent,
+    ProductsComponent
   ],
   bootstrap: [AppComponent],
 })

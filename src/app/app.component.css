@@ -5,3 +5,11 @@ ul li {
   display: inline;
   margin-left: 20px;
 }
+.btn{
+  background-color: green;
+  border-radius: 5px;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+}

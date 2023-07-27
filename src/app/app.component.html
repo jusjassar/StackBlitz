@@ -1,9 +1,28 @@
 <div>
   <ul>
-    <li><a routerLink='home'>Home</a></li>
-    <li><a routerLink='students'>Students</a></li>
+    <li><a routerLink="home">Home</a></li>
+    <li><a routerLink="students">Students</a></li>
   </ul>
 </div>
 <div>
   <router-outlet></router-outlet>
+</div>
+<div class="container">
+  <!-- example of custom property -->
+  <app-products [title]='titleSamsung'>
+    <!-- <h3 class="title">Products in Samsung</h3> -->
+    <button class="btn">More in Samsung</button>
+  </app-products>
+  <app-products>
+  <h3 class="title">Products in Iphone</h3>
+  <button class="btn">More in Iphone</button>
+</app-products>
+<app-products>
+<h3 class="title">Products in MI</h3>
+<button class="btn">More in Mi</button>
+</app-products>
+<app-products>
+<h3 class="title">Products in OnePlus</h3>
+<button class="btn">More in OnePlus</button>
+</app-products>
 </div>

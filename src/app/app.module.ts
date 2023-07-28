@@ -4,10 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { DemoComponent } from './demo/demo.component';
 
 @NgModule({
   imports: [BrowserModule, HttpClientModule],
-  declarations: [AppComponent],
+  declarations: [AppComponent,DemoComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

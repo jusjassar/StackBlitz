@@ -4,10 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { HighlightDirective } from './customAttributeDirectiveRenderer/customAttributeDirectiveRenderer.directive';
 
 @NgModule({
   imports: [BrowserModule, HttpClientModule],
-  declarations: [AppComponent],
+  declarations: [AppComponent,HighlightDirective],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

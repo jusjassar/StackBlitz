@@ -4,10 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { HostBindingDirective } from './customDirective/HostBinding.directive';
 
 @NgModule({
   imports: [BrowserModule, HttpClientModule],
-  declarations: [AppComponent],
+  declarations: [AppComponent,HostBindingDirective],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

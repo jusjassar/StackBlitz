@@ -5,8 +5,8 @@ import { Directive, ElementRef, HostBinding, Input, OnInit, Renderer2 } from "@a
 })
 export class DynamicCustomsDirective { 
 
-  constructor(private element:ElementRef,private rendere:Renderer2){}
+  constructor(){}
 
-  @Input() colorFrmElement:string=''
-  @HostBinding('sytle.color') mycolor = this.colorFrmElement;
+  @Input() colorFrmElement:string='red'
+  // @HostBinding('sytle.color') mycolor = this.colorFrmElement;
 }
